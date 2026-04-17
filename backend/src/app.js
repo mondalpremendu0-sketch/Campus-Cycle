@@ -5,14 +5,21 @@ const jwt = require('jsonwebtoken');
 const morgan = require("morgan");
 const { Strategy: GoogleStrategy } = require('passport-google-oauth20');
 const cookieParser = require('cookie-parser');
+const cors = require('cors');
 const googleModel = require("./model/google.model");
 const userRoutes = require("./routes/user.routes");
+const itemRoutes = require("./routes/item.routes");
 const errorHandler = require('./middlewares/error.middleware');
 
 const app = express();
 
 
-
+app.use(cors({
+  origin: ["http://localhost:5173","http://localhost:3000"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(passport.initialize());
@@ -21,6 +28,7 @@ app.use(cookieParser());
 
 
 app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/items", itemRoutes);
 
 
 
@@ -50,12 +58,15 @@ app.get('/api/v1/user/auth/google',
 app.get('/api/v1/user/auth/google/callback',
   passport.authenticate('google', { session: false }),
   (req, res) => {
-    // Generate a JWT for the authenticated user
-    const token = jwt.sign({ id: req.user.id, displayName: req.user.displayName }, process.env.JWT_SECRET, { expiresIn: '1h' });
-    // Send the token to the client
-   res.json({
-    token
-   })
+    const token = jwt.sign({ id: req.user.id, displayName: req.user.displayName }, process.env.JWT_SECRET, { expiresIn: '7d' });
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: false,
+      sameSite: 'lax',
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
+    const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+    res.redirect(`${frontendUrl}/profile`);
   }
 );
 

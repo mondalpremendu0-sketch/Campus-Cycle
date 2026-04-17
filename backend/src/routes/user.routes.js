@@ -17,7 +17,7 @@ router.get("/",(req,res)=>{
 router.post("/register",registerController);
 router.post("/login",loginController);
 router.get("/profile",authMiddleware,profileController);
-router.get("/logout",authMiddleware,logoutController);
+router.post("/logout",authMiddleware,logoutController);
 
 
 module.exports = router

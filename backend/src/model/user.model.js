@@ -43,7 +43,7 @@ const userSchema = new mongoose.Schema({
     }
 
 
-});
+},{timestamps:true});
 
 const User = mongoose.model('Hac_project_User', userSchema);
 
