@@ -54,6 +54,8 @@ const registerController = async (req, res,next) => {
             secure:true,
             maxAge: 7 * 24 * 60 * 60 * 1000
         });
+
+        newUser.password = undefined;
         res.status(201).json({
             success: true,
             message:"User registered successfully",
@@ -84,7 +86,7 @@ const loginController = async (req, res,next) => {
             return next(new AppError("Invalid email or password", 401));
         }
 
-        const token = jwt.sign({ 
+        const token = await jwt.sign({ 
             id: user._id,
             username: user.username,
             email: user.email
@@ -97,6 +99,7 @@ const loginController = async (req, res,next) => {
             secure: true,
             maxAge: 7 * 24 * 60 * 60 * 1000
         });
+        user.password = undefined;
 
         res.status(200).json({
             success: true,
