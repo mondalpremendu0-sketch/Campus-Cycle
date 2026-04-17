@@ -1,2 +1,6 @@
 .env
 node_modules
+backend/.env
+backend copy/.env
+backend/node_modules/
+backend copy/node_modules/
