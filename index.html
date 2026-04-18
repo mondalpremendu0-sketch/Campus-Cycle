@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CampusCycle - Reducing waste, saving money, and building a circular mindset on college campuses aligned with Mission LiFE.">
+    <meta name="keywords" content="Circular Economy, Campus, Sustainability, Mission LiFE, Student Exchange, Reuse">
+    <meta name="author" content="CampusCycle">
+    <title>CampusCycle | The Circular Campus Economy</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CampusCycle | The Circular Campus Economy">
+    <meta property="og:description" content="Reimagine how physical resources flow through a college campus across generations of students.">
+    <meta property="og:image" content="assets/img/hero.png">
+    <meta property="og:url" content="https://campuscycle.edu">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CampusCycle",
+      "url": "https://campuscycle.edu",
+      "description": "Connecting outgoing students with incoming ones to reduce waste and promote a circular economy on campus."
+    }
+    </script>
+</head>
+<body>
+
+    <div id="landing-view">
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-recycle"></i> CampusCycle
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#challenge">Our Mission</a></li>
+                <li><a href="#" class="btn-nav open-role-modal">Join Movement</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Mission LIFE Aligned</span>
+                <h1>The Circular <br><span class="accent-text">Campus Economy</span></h1>
+                <p>Every semester, valuable items are discarded while incoming students buy them brand new. It's time to capture the environmental and economic value sitting inside our campus gates.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary open-role-modal">Get Started</a>
+                    <a href="#problem" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>100k+</h3>
+                        <p>Items Wasted</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>₹50M+</h3>
+                        <p>Value Lost</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0</h3>
+                        <p>Structured Systems</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/img/hero.png" alt="Students exchanging books and items on a green sustainable college campus" loading="lazy">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Problem Context Section -->
+        <section id="problem" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Invisible <span class="accent-text">Waste Cycle</span></h2>
+                    <p class="subtitle">A closer look at what happens every semester on thousands of campuses.</p>
+                </div>
+                <div class="problem-grid">
+                    <div class="problem-card fade-in">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <h3>Overflowing Dustbins</h3>
+                        <p>Graduating students throw away or abandon textbooks, lab coats, bicycles, calculators, and hostel supplies. Dustbins overflow at end-of-semester.</p>
+                    </div>
+                    <div class="problem-card fade-in delay-1">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h3>Unnecessary Purchases</h3>
+                        <p>While seniors discard perfectly good items, incoming juniors buy the exact same items brand new, wasting money and resources.</p>
+                    </div>
+                    <div class="problem-card fade-in delay-2">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                        </div>
+                        <h3>Lost Value</h3>
+                        <p>Local kabaadiwalas buy valuable items for pennies and resell them at huge markups. The campus community loses out on the inherent economic value.</p>
+                    </div>
+                    <div class="problem-card fade-in delay-3">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-barrier-block"></i>
+                        </div>
+                        <h3>The Barriers</h3>
+                        <p>Trust issues, logistics, pricing, condition verification, and coordination across batches all stand in the way of a natural exchange.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Challenge Section -->
+        <section id="challenge" class="section">
+            <div class="container challenge-container">
+                <div class="challenge-image fade-in">
+                    <!-- A decorative element or abstract representation -->
+                    <div class="circle-illustration">
+                        <div class="circle c1"></div>
+                        <div class="circle c2"></div>
+                        <div class="circle c3">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="challenge-content fade-in">
+                    <h2>The Challenge: <br><span class="accent-text">Reimagine Resource Flow</span></h2>
+                    <p>We are calling on innovators, students, and campus administrators to rethink how physical resources flow through a college campus across generations of students.</p>
+                    
+                    <ul class="challenge-goals">
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <strong>Reduce Waste</strong>
+                                <span>Prevent perfectly usable items from ending up in landfills.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <strong>Save Students Money</strong>
+                                <span>Provide affordable access to essential campus supplies.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <strong>Build a Circular Mindset</strong>
+                                <span>Align campus life with the principles of Mission LiFE (Lifestyle for Environment).</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="join" class="section cta-section">
+            <div class="container text-center">
+                <h2 class="text-white">Ready to break the cycle?</h2>
+                <p class="text-white subtitle">Join the movement to build a structured system connecting outgoing students with incoming ones.</p>
+                <form class="cta-form fade-in">
+                    <input type="email" placeholder="Enter your academic email address" required aria-label="Email Address">
+                    <button type="button" class="btn btn-primary btn-large open-role-modal">Get Involved</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <i class="fa-solid fa-recycle"></i> CampusCycle
+                </a>
+                <p>Sustainability / Circular Economy / Mission LiFE</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#problem">The Problem</a></li>
+                    <li><a href="#challenge">The Challenge</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Mission LiFE</a></li>
+                    <li><a href="#">Circular Economy Guide</a></li>
+                    <li><a href="#">Campus Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:hello@campuscycle.edu">hello@campuscycle.edu</a></li>
+                    <li>New Delhi, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 CampusCycle. All rights reserved. Building a sustainable future.</p>
+        </div>
+    </footer>
+    </div> <!-- End of Landing View -->
+
+    <!-- Role Selection Modal -->
+    <div id="role-modal" class="modal-overlay">
+        <div class="modal-content fade-in">
+            <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <h2>How would you like to use <span class="accent-text">CampusCycle?</span></h2>
+            <p>Select a role to continue to the marketplace.</p>
+            <div class="role-buttons">
+                <button class="btn btn-primary btn-large role-select" data-role="buyer">
+                    <i class="fa-solid fa-bag-shopping"></i> I'm a Buyer
+                </button>
+                <button class="btn btn-secondary btn-large role-select" data-role="seller">
+                    <i class="fa-solid fa-shop"></i> I'm a Seller
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- App View (Buyer & Seller Flows) -->
+    <div id="app-view" style="display: none;">
+        
+        <!-- App Navbar (simplified) -->
+        <nav class="app-navbar">
+            <div class="container nav-container">
+                <button type="button" class="btn-back-home" id="back-to-home">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Home
+                </button>
+                
+                <!-- Role Toggle -->
+                <div class="role-toggle">
+                    <button class="toggle-btn active" data-target="buyer">Buyer</button>
+                    <button class="toggle-btn" data-target="seller">Seller</button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="app-main">
+            <!-- BUYER SECTION -->
+            <section id="buyer-section" class="app-section">
+                <div class="container">
+                    <div class="search-container">
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="buyer-search" placeholder="Search for books, calculators, cycles...">
+                        </div>
+                        <select class="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="books">Books</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="cycles">Cycles</option>
+                            <option value="supplies">Hostel Supplies</option>
+                        </select>
+                    </div>
+
+                    <div class="items-grid" id="items-grid">
+                        <!-- Dummy Item 1 -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="assets/img/table.jpeg"  alt="HP Laptop">
+                                <span class="condition-badge badge-good">Good</span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h3 class="item-title">HP Pavilion Core i5</h3>
+                                    <span class="item-price">₹25,000</span>
+                                </div>
+                                <p class="item-desc">Used for 2 years, works perfectly. Charger included.</p>
+                                <div class="item-footer">
+                                    <span class="seller-name"><i class="fa-solid fa-user-circle"></i> Rahul S.</span>
+                                    <button class="btn btn-sm btn-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 2 -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="assets/img/cycle.jpeg" alt="Hero Cycle">
+                                <span class="condition-badge badge-fair">Fair</span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h3 class="item-title">Hero Sprint Bicycle</h3>
+                                    <span class="item-price">₹2,500</span>
+                                </div>
+                                <p class="item-desc">Needs a bit of oiling. Tyres are in decent condition.</p>
+                                <div class="item-footer">
+                                    <span class="seller-name"><i class="fa-solid fa-user-circle"></i> Amit K.</span>
+                                    <button class="btn btn-sm btn-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 3 -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="assets/img/drafter.jpeg" alt="Mini Drafter">
+                                <span class="condition-badge badge-new">Like New</span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h3 class="item-title">Engineering Mini Drafter Set</h3>
+                                    <span class="item-price">₹300</span>
+                                </div>
+                                <p class="item-desc">Used only for one semester. Contains all scales and compass.</p>
+                                <div class="item-footer">
+                                    <span class="seller-name"><i class="fa-solid fa-user-circle"></i> Sneha P.</span>
+                                    <button class="btn btn-sm btn-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 4 -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="assets/img/laptop.jpeg"alt="Study Table">
+                                <span class="condition-badge badge-good">Good</span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h3 class="item-title">Foldable Study Table</h3>
+                                    <span class="item-price">₹500</span>
+                                </div>
+                                <p class="item-desc">Sturdy foldable table, perfect for hostel rooms.</p>
+                                <div class="item-footer">
+                                    <span class="seller-name"><i class="fa-solid fa-user-circle"></i> Vikram M.</span>
+                                    <button class="btn btn-sm btn-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 5 -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <div class="placeholder-img">
+                                   <img src="/home/saswata/campusCycle_front/assets/img/blobio-201811_ojmmfkbe.webp" alt="Erwin Kreyszig 10th Editionolx book">
+                                    <i class="fa-solid fa-book"></i></div>
+                                <span class="condition-badge badge-new">Like New</span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h3 class="item-title">Advanced Engineering Mathematics</h3>
+                                    <span class="item-price">₹450</span>
+                                </div>
+                                <p class="item-desc">Erwin Kreyszig 10th Edition. No highlights or markings.</p>
+                                <div class="item-footer">
+                                    <span class="seller-name"><i class="fa-solid fa-user-circle"></i> Priya D.</span>
+                                    <button class="btn btn-sm btn-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 6 -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <div class="placeholder-img"><i class="fa-solid fa-calculator">
+                                      <img src="assets/img/images.jpeg" alt=""calculator">
+                                </i></div>
+                                <span class="condition-badge badge-good">Good</span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h3 class="item-title">Casio fx-991EX Scientific Calc</h3>
+                                    <span class="item-price">₹800</span>
+                                </div>
+                                <p class="item-desc">Works perfectly. Minor scratches on the cover.</p>
+                                <div class="item-footer">
+                                    <span class="seller-name"><i class="fa-solid fa-user-circle"></i> Rohan G.</span>
+                                    <button class="btn btn-sm btn-primary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SELLER SECTION -->
+            <section id="seller-section" class="app-section" style="display: none;">
+                <div class="container seller-container">
+                    <div class="seller-header text-center">
+                        <h2>List Your Item</h2>
+                        <p class="subtitle">Fill out the details below to find a buyer on campus.</p>
+                    </div>
+                    
+                    <form id="seller-form" class="seller-form">
+                        <div class="form-grid">
+                            <!-- Image Upload -->
+                            <div class="form-group full-width">
+                                <label>Item Image</label>
+                                <div class="upload-container" id="upload-container">
+                                    <input type="file" id="item-image" accept="image/*" hidden>
+                                    <div class="upload-placeholder" id="upload-placeholder">
+                                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        <p>Click or drag image to upload</p>
+                                    </div>
+                                    <div class="upload-preview" id="upload-preview" style="display: none;">
+                                        <img id="preview-img" src="" alt="Preview">
+                                        <button type="button" id="remove-img" class="btn-remove"><i class="fa-solid fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="item-name">Item Name</label>
+                                <input type="text" id="item-name" placeholder="e.g. Casio fx-991EX Calculator" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="item-category">Category</label>
+                                <select id="item-category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="books">Books & Notes</option>
+                                    <option value="electronics">Electronics</option>
+                                    <option value="cycles">Cycles</option>
+                                    <option value="furniture">Furniture</option>
+                                    <option value="supplies">Hostel Essentials</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="item-price">Expected Price (₹)</label>
+                                <input type="number" id="item-price" placeholder="e.g. 500" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="item-condition">Condition</label>
+                                <select id="item-condition" required>
+                                    <option value="">Select Condition</option>
+                                    <option value="new">Like New</option>
+                                    <option value="good">Good</option>
+                                    <option value="fair">Fair</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="item-desc">Description</label>
+                                <textarea id="item-desc" rows="3" placeholder="Briefly describe the item, age, and any flaws..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="seller-name">Your Name</label>
+                                <input type="text" id="seller-name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="seller-contact">Contact Info (Phone/Email)</label>
+                                <input type="text" id="seller-contact" placeholder="+91 9876543210" required>
+                            </div>
+                        </div>
+                        
+                        <div id="form-success" class="form-success" style="display: none;">
+                            <i class="fa-solid fa-circle-check"></i> Item listed successfully!
+                        </div>
+
+                        <div class="form-actions text-center">
+                            <button type="submit" class="btn btn-primary btn-large full-width">List My Item</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div> <!-- End of App View -->
+
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
