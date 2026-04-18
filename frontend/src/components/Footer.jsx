@@ -1,51 +1,58 @@
-import React from 'react';
-import '../styles/components/shared.css';
-import '../styles/components/Footer.css';
+import { Leaf, Globe, Mail, MessageCircle } from 'lucide-react';
+import './Footer.css';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer>
-      <div className="container footer-container">
-        <div className="footer-brand">
-          <a href="#" className="logo text-white">
-            <i className="fa-solid fa-recycle"></i> CampusCycle
-          </a>
-          <p>Sustainability / Circular Economy / Mission LiFE</p>
-          <div className="social-links">
-            <a href="#" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin"></i></a>
-            <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-grid">
+          <div className="footer-brand">
+            <div className="logo footer-logo">
+              <Leaf className="logo-icon" />
+              <span className="logo-text">Campus<span className="accent">Circular</span></span>
+            </div>
+            <p>Reducing waste and saving students money through localized circular economies.</p>
+            <div className="social-links">
+              <a href="#" aria-label="Community"><MessageCircle size={20} /></a>
+              <a href="#" aria-label="Contact"><Mail size={20} /></a>
+              <a href="#" aria-label="Website"><Globe size={20} /></a>
+            </div>
+          </div>
+
+          <div className="footer-links">
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="#how-it-works">How it Works</a></li>
+              <li><a href="#problem">The Problem</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#mission">Mission LiFE</a></li>
+              <li><a href="#">Sustainability Guides</a></li>
+              <li><a href="#">Campus Ambassadors</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-links">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Trust & Safety</a></li>
+            </ul>
           </div>
         </div>
-        <div className="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#problem">The Problem</a></li>
-            <li><a href="#challenge">The Challenge</a></li>
-          </ul>
+        
+        <div className="footer-bottom">
+          <p>&copy; {new Date().getFullYear()} CampusCircular. Built for Mission LiFE Initiative.</p>
         </div>
-        <div className="footer-links">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="#">Mission LiFE</a></li>
-            <li><a href="#">Circular Economy Guide</a></li>
-            <li><a href="#">Campus Sustainability</a></li>
-          </ul>
-        </div>
-        <div className="footer-links">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:hello@campuscycle.edu">hello@campuscycle.edu</a></li>
-            <li>New Delhi, India</li>
-          </ul>
-        </div>
-      </div>
-      <div className="footer-bottom container">
-        <p>&copy; 2026 CampusCycle. All rights reserved. Building a sustainable future.</p>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

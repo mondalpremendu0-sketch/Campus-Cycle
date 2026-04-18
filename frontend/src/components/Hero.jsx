@@ -1,51 +1,51 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../styles/components/shared.css';
-import '../styles/components/Hero.css';
+import { ArrowRight, RefreshCcw } from 'lucide-react';
+import heroImg from '../assets/hero_circular.png';
+import './Hero.css';
 
-const Hero = () => {
-  const navigate = useNavigate();
-
-  const handleGetStarted = () => {
-    navigate('/register');
-  };
-
-  const handleLearnMore = () => {
-    document.getElementById('problem').scrollIntoView({ behavior: 'smooth' });
-  };
-
+export default function Hero() {
   return (
-    <header id="home" className="hero">
+    <section className="hero">
       <div className="container hero-container">
         <div className="hero-content">
-          <span className="badge">Mission LIFE Aligned</span>
-          <h1>The Circular <br /><span className="accent-text">Campus Economy</span></h1>
-          <p>Every semester, valuable items are discarded while incoming students buy them brand new. It's time to capture the environmental and economic value sitting inside our campus gates.</p>
-          <div className="hero-buttons">
-            <button className="btn btn-primary" onClick={handleGetStarted}>Get Started</button>
-            <button className="btn btn-secondary" onClick={handleLearnMore}>Learn More</button>
+          <div className="badge">Mission LiFE Initiative</div>
+          <h1 className="hero-title">
+            Reimagine Campus <span className="highlight">Resources.</span>
+          </h1>
+          <p className="hero-subtitle">
+            Don't abandon it. Pass it on. 
+            Connect with incoming juniors to buy, sell, or donate textbooks, lab coats, and electronics seamlessly.
+          </p>
+          <div className="hero-actions">
+            <a href="#get-started" className="btn btn-primary hero-btn">
+              Start Trading <ArrowRight className="btn-icon" size={20} />
+            </a>
+            <a href="#how-it-works" className="btn btn-secondary hero-btn">
+              Learn How
+            </a>
           </div>
-          <div className="stats">
-            <div className="stat-item">
-              <h3>100k+</h3>
-              <p>Items Wasted</p>
+          <div className="hero-stats">
+            <div className="stat-card">
+              <h3>500+</h3>
+              <p>Items Rescued</p>
             </div>
-            <div className="stat-item">
-              <h3>₹50M+</h3>
-              <p>Value Lost</p>
+            <div className="stat-card">
+              <h3>₹50k+</h3>
+              <p>Student Savings</p>
             </div>
-            <div className="stat-item">
-              <h3>0</h3>
-              <p>Structured Systems</p>
+            <div className="stat-card">
+              <h3>300kg</h3>
+              <p>Waste Reduced</p>
             </div>
           </div>
         </div>
-        <div className="hero-image">
-          <img src="/assets/hero.png" alt="Students exchanging books and items on a green sustainable college campus" loading="lazy" />
+        <div className="hero-visual">
+          <div className="visual-circle main-circle">
+            <RefreshCcw className="floating-icon icon-1" size={48} />
+          </div>
+          <div className="visual-circle secondary-circle"></div>
+          <img src={heroImg} alt="Students exchanging electronics and books" className="hero-img" />
         </div>
       </div>
-    </header>
+    </section>
   );
-};
-
-export default Hero;
+}

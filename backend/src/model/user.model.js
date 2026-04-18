@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
         required: [true, 'Address is required']
      },
     year: {
-        type: Number,
+        type: String,
         required: [true, 'Year is required']
         },
     role:{

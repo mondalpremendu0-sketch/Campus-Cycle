@@ -59,6 +59,7 @@ const registerController = async (req, res,next) => {
         res.status(201).json({
             success: true,
             message:"User registered successfully",
+            token,
             user: newUser
         });
     } catch (error) {
@@ -104,6 +105,7 @@ const loginController = async (req, res,next) => {
         res.status(200).json({
             success: true,
             message: "Login successful",
+            token,
             user
         });
 
